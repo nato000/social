@@ -2,14 +2,13 @@ const path = require("path");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const ESLintPlugin = require("eslint-webpack-plugin");
 const Dotenv = require("dotenv-webpack");
-const user = require("./user.config");
 
 const webpackConfig = {
-	entry: path.resolve(__dirname, "src", "index.js"),
+	entry: path.resolve(__dirname, "../src", "index.js"),
 
 	output: {
 		filename: "[name].[contenthash].bundle.js",
-		path: path.resolve(__dirname, "dist"),
+		path: path.resolve(__dirname, "../dist"),
 		clean: true,
 	},
 
@@ -39,8 +38,7 @@ const webpackConfig = {
 
 	plugins: [
 		new HTMLWebpackPlugin({
-			title: user.title,
-			template: path.resolve(__dirname, "src", "index.html"),
+			template: path.resolve(__dirname, "../src", "index.html"),
 		}),
 		new ESLintPlugin({
 			files: "src/**/*.js",
