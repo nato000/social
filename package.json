@@ -1,7 +1,7 @@
 {
-	"name": "create-vanilla-js",
+	"name": "social-network",
 	"version": "1.0.0",
-	"description": "A quick start package for your vanillaJS app",
+	"description": "",
 	"main": "index.js",
 	"babel": {
 		"presets": [
@@ -18,8 +18,15 @@
 		"build": "webpack --config webpack.prod.js",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
-	"author": "Maddy",
-	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nato000/social.git"
+	},
+	"author": "nato",
+	"bugs": {
+		"url": "https://github.com/nato000/social/issues"
+	},
+	"homepage": "https://github.com/nato000/social#readme",
 	"devDependencies": {
 		"@babel/core": "^7.14.3",
 		"@babel/preset-env": "^7.14.4",
@@ -32,16 +39,19 @@
 		"eslint-plugin-prettier": "^4.2.1",
 		"eslint-webpack-plugin": "^2.5.4",
 		"html-webpack-plugin": "^5.3.1",
-		"mini-css-extract-plugin": "^1.6.0",
-		"style-loader": "^2.0.0",
 		"husky": "^8.0.1",
 		"lint-staged": "^13.0.3",
+		"mini-css-extract-plugin": "^1.6.0",
 		"prettier": "2.7.1",
 		"pretty-quick": "^3.1.3",
+		"style-loader": "^2.0.0",
 		"webpack": "^5.38.1",
 		"webpack-cli": "^4.7.0",
 		"webpack-dev-server": "^4.11.1",
 		"webpack-merge": "^5.8.0"
+	},
+	"dependencies": {
+		"firebase": "^9.12.1"
 	},
 	"husky": {
 		"hooks": {
